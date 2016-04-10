@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Embody By Team Swole Design VR Website</title>
+<script src="https://aframe.io/releases/0.1.2/aframe.min.js"></script>
+</head>
+
+<body>
+
+<a-scene>
+
+<!-- Website Assets -->
+	
+	<a-camera position="0 1.6 1"></a-camera>
+	
+	<a-assets>
+    	<img id="embody" src="embody.png" alt="none">
+        <img id="swole" src="Swole.png" alt="none">
+        <img id="gameplay" src="gameplay.png" alt="none">
+		<audio id="music" src="themesong.mp3"> </audio>
+    </a-assets>
+	
+	
+	<a-entity cursor position="0 0 -5"></a-entity>
+
+	
+	
+	<!-- Embody Logo -->
+	<a-image src="embody.png" width="10" height="5" position="0 3 -4" scale="0.5 0.5 0.5"></a-image>
+	
+	
+	<!-- Swole Design Logo -->
+    <a-image src="Swole.png" width="6" height="5" position="0 0.5 -3.8" scale="0.2 0.2 0.2"> 
+	<a-animation attribute="rotation" repeat="indefinite" to="0 360 0" dur="3000"></a-animation>
+	</a-image>
+
+	
+    <!-- Meet the Team -->
+    <a-curvedimage src="team.png" radius="5.7" theta-length="40" height="5" rotation="0 90 0" position= "0 6 2" scale="1 1 1"></a-curvedimage>
+
+	<!-- Thomas Picture -->
+	<a-curvedimage src="thomas.png" radius="5.7" theta-length="25" height="2.6" rotation="0 80 0" position="0 0.7 0" scale="0.6 0.6 0.6"></a-curvedimage>
+					 
+	<!-- Jacky Picture -->
+	<a-curvedimage src="jacky.jpg" radius="5.7" theta-length="25" height="2.6" rotation="0 80 0" position="0 3 0" scale="0.6 0.6 0.6"></a-curvedimage>				 
+	
+	<!-- Nick Picture -->
+	<a-curvedimage src="nick.jpg" radius="5.7" theta-length="25" height="2.6" rotation="2 80 0" position="-1 3 2" scale="0.6 0.6 0.6"></a-curvedimage>	
+                     
+    <!-- Reed Picture -->
+	<a-curvedimage src="reed.jpg" radius="5.7" theta-length="25" height="2.6" rotation="-1 80 0" position="-1 0.7 2" scale="0.6 0.6 0.6"></a-curvedimage>	
+                     
+    <!-- Tri Picture -->
+	<a-curvedimage src="tri.jpg" radius="5.7" theta-length="25" height="2.6" rotation="-3 110 0" position="-1 2 2.5" scale="0.6 0.6 0.6"></a-curvedimage>	
+	
+    <!-- Embody Description -->
+	<a-curvedimage src="intro.png" radius="5.7" theta-length="70" height="5" rotation="0 -50 0" position= "-0.5 1 2" scale="1 1 1"></a-curvedimage>
+
+                     
+    <!-- Embody Theme Song--> 
+	<a-curvedimage src="song.png" radius="5.7" theta-length="40" height="5" rotation="0 -160 0" position="0 0 0" scale="1 1 1" sound="src: themesong.mp3; on: click"></a-curvedimage>
+
+   
+   
+	
+<!-- Sky -->	
+<a-sky color="#ECECEC"></a-sky>
+
+
+
+</a-scene>
+</body>
+</html>
